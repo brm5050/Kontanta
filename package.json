@@ -1,0 +1,19 @@
+{
+  "name": "kontanta",
+  "version": "1.0.0",
+  "description": "A place to Find Your Furry Friend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brm5050/Kontanta.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brm5050/Kontanta/issues"
+  },
+  "homepage": "https://github.com/brm5050/Kontanta#readme"
+}
