@@ -1,0 +1,15 @@
+//Use your own password on your local machine for testing.
+//Make sure you are placing the sql schema files into your own workbench
+
+
+
+{
+  "development": {
+    "username": "root",
+    "password": null,
+    "database": "blogger",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+
+}
