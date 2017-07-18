@@ -1,0 +1,14 @@
+h1 {
+	font-size: 70px;
+	font-weight: bold;
+}
+
+h2 {
+
+}
+
+button {
+	max-height: 200px;
+	max-width: 300px;
+	margin: 40px;
+}
