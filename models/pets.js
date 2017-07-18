@@ -17,8 +17,8 @@ pettype : {
 
 
 pets.associate = function(models) {
-    // Associating Author with Posts
-    // When an Author is deleted, also delete any associated Posts
+    // Associating pets with petDetails
+    // When an pets is deleted, also delete any associated petDetails
     pets.hasMany(models.petDetails, {
       onDelete: "cascade"
     });

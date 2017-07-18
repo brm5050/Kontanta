@@ -12,16 +12,16 @@ var db = require("../models");
 // =============================================================
 module.exports = function(app) {
 
-  // GET route for getting all of the posts
-  app.get("/api/petdetails", function(req, res) {
+  // GET route for getting all of the petDetails
+  app.get("/api/petDetails", function(req, res) {
     var query = {};
     if (req.query.pet_id) {
       query.petId = req.query.pet_id;
     }
     // Here we add an "include" property to our options in our findAll query
     // We set the value to an array of the models we want to include in a left outer join
-    // In this case, just db.Author
-    db.Post.findAll({
+    // In this case, just db.pets
+    db.petDetails.findAll({
       where: query,
       include: [db.pets]
     }).then(function(dbpetdetails) {
@@ -29,12 +29,12 @@ module.exports = function(app) {
     });
   });
 
-  // Get rotue for retrieving a single post
-  app.get("/api/petdetails/:id", function(req, res) {
+  // Get rotue for retrieving a single petDetails
+  app.get("/api/petDetails/:id", function(req, res) {
     // Here we add an "include" property to our options in our findOne query
     // We set the value to an array of the models we want to include in a left outer join
-    // In this case, just db.Author
-    db.petdetails.findOne({
+    // In this case, just db.pets
+    db.petDetails.findOne({
       where: {
         id: req.params.id
       },
@@ -44,17 +44,17 @@ module.exports = function(app) {
     });
   });
 
-//  POST route for saving a new post
+//  POST route for saving a new pet
 
-  app.post("/api/petdetails", function(req, res) {
+  app.post("/api/petDetails", function(req, res) {
     db.petDetails.create(req.body).then(function(dbpetdetails) {
       res.json(dbpetdetails);
     });
   });
 
-  // DELETE route for deleting posts
-  app.delete("/api/petdetails/:id", function(req, res) {
-    db.petdetails.destroy({
+  // DELETE route for deleting pet not available
+  app.delete("/api/petDetails/:id", function(req, res) {
+    db.petDetails.destroy({
       where: {
         id: req.params.id
       }
@@ -63,9 +63,9 @@ module.exports = function(app) {
     });
   });
 
-  // PUT route for updating posts
-  app.put("/api/petdetails", function(req, res) {
-    db.petdetails.update(
+  // PUT route for updating petDetails
+  app.put("/api/petDetails", function(req, res) {
+    db.petDetails.update(
       req.body,
       {
         where: {
