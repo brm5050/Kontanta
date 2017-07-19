@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/brm5050/Kontanta/issues"
   },
-  "homepage": "https://github.com/brm5050/Kontanta#readme"
+  "homepage": "https://github.com/brm5050/Kontanta#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "mysql2": "^1.3.6",
+    "sequelize": "^4.3.2"
+  }
 }
