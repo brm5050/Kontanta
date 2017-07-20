@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/brm5050/Kontanta/issues"
   },
-  "homepage": "https://github.com/brm5050/Kontanta#readme"
+  "homepage": "https://github.com/brm5050/Kontanta#readme",
+  "dependencies": {
+    "express-handlebars": "^3.0.0"
+  }
 }

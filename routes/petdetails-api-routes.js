@@ -13,7 +13,7 @@ var db = require("../models");
 module.exports = function(app) {
 
   // GET route for getting all of the petDetails
-  app.get("/api/petDetails", function(req, res) {
+  app.get("/petDetails", function(req, res) {
     var query = {};
     if (req.query.pet_id) {
       query.petId = req.query.pet_id;
@@ -30,7 +30,7 @@ module.exports = function(app) {
   });
 
   // Get rotue for retrieving a single petDetails
-  app.get("/api/petDetails/:id", function(req, res) {
+  app.get("/petDetails/:id", function(req, res) {
     // Here we add an "include" property to our options in our findOne query
     // We set the value to an array of the models we want to include in a left outer join
     // In this case, just db.pets
