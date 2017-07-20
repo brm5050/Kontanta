@@ -60,6 +60,11 @@ stock : {
       }
 	}
 
+  // ,image: {
+  //   type: Sequelize.BLOB('long'),
+  //   allowNull: true
+  // }
+
 
 });
 
