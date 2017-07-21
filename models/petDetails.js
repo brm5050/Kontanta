@@ -58,12 +58,17 @@ stock : {
   validate: {
         len: [1]
       }
-	}
+	},
 
-  // ,image: {
-  //   type: Sequelize.BLOB('long'),
-  //   allowNull: true
-  // }
+  url: {
+    type: Sequelize.STRING,
+    allowNull: true
+  },
+
+  vaccinated: {
+    type: Sequelize.STRING,
+    allowNull: false
+  }
 
 
 });
