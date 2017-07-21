@@ -25,6 +25,15 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // Static directory
 app.use(express.static("public"));
 
+// Set Handlebars.
+var exphbs = require("express-handlebars");
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
+
+// Import routes and give the server access to them.
+var routes = require("./controllers/petDetailsController.js");
+app.use("/", routes);
+
 // Routes
 // =============================================================
 require("./routes/html-routes.js")(app);
