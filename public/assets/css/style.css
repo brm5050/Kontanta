@@ -17,4 +17,11 @@ body{
 
 label {
 	font-weight: bold;
+	font-size: 30px;
+}
+
+select {
+	max-width: 65%;
+	display: block;
+	margin: 0 auto;
 }
