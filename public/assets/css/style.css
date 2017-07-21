@@ -1,13 +1,27 @@
-
 body{
-
 	background: #ccffcc;
 }
 
-
-h10{
-
+.jumbotron {
+	text-align: center;
 	background: #ccffcc;
+	font-size: 90px;
+	font-weight: bold;
+	font-family: sans-serif;
 }
 
+.footer {
+	margin: 20px;
+	font-weight: bold;
+}
 
+label {
+	font-weight: bold;
+	font-size: 30px;
+}
+
+select {
+	max-width: 65%;
+	display: block;
+	margin: 0 auto;
+}

@@ -1,68 +1,31 @@
-<div class="container">
+<h2>Adorable pets to Adopt!</h2> </br>
 
-	<div class="row">
 
-		<div class="col-md-12">
-			<img src="/assets/img/burger.jpg" alt="burger" id="pic" class="img-responsive center-block">
-		</div>
-	</div>
+<ul>
+  {{#each petDetails}}
 
-	<div class="row">
+      
 
-		<div class="col-md-12">
-			<h1 class="text-center text-danger">Burger2</h1>
-		</div>
-	</div>
+      <div class="col-md-6">
 
-	<div class="row">
+        <div class="form-group">
+        <label for="petname">Pet Name:</label> {{this.petName}} </br>
+        <label for="petdescription">Description:</label> {{this.petDescription}}</br>
+        <label for="petage">Age:</label> {{this.age}} </br>
+        <label for="petgender">Gender:</label> {{this.gender}} </br>
+        <label for="petprice">Price (US $):</label> {{this.price}} </br>
+        <label for="petstock">Available:</label> {{this.stock}} </br>
+        </div>
+ 
+        <a href="/purchase/{{this.id}}" class="button">Adopt Me!</a>
 
-		<div class="col-md-5">
-			<h3>Uneaten Burgers</h3>
-			<ul>
-				{{#each burgers}}
-					{{#unless this.devoured}}
-						<li>
-							<h5>{{this.id}}. {{this.burger_name}}
-								<form action='burgers/update/{{this.id}}?_method=PUT' method='POST'>
-									<input type='hidden' name='devoured' value='true'>
-									<button type='submit' class="btn btn-default">EAT THIS!</button>
-								</form>
-							</h5>
-						</li>
-					{{/unless}}
-				{{/each}}
-			</ul>
-		</div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
 
-		<div class="col-md-2"></div>
+     </div>
 
-		<div class="col-md-5">
-			<h3 class="text-muted">Eaten Burgers</h3>
-			<ul>
-				{{#each burgers}}
-					{{#if this.devoured}}
-						<li>
-							<h5 class="text-muted">{{this.id}}. {{this.burger_name}}</h5>
-						</li>
-					{{/if}}
-				{{/each}}
-			</ul>
-		</div>
-	</div>
+  {{/each}}
+</ul>
 
-	<br><br>
-
-	<div class="row">
-
-		<div class="col-md-12 text-center">
-			<form class="create-update-form" action="burgers/insert" method="POST">
-				<div class="form-group">
-					<!-- <label for="bg">Burger Name:</label> -->
-					<textarea type="text" name="name"></textarea><br>
-					<button class="btn btn-default" type="submit">Submit</button>
-					<h5 class="text-center">Enter a burger you want to eat and click Submit!</h5>
-				</div>
-			</form>
-		</div>
-	</div>
-</div>
