@@ -1,21 +1,39 @@
 body{
-	background: #ccffcc;
+	background-image: url("/assets/images/background.jpg");
+	align-content: center;
+	text-align: center;
 }
 
-.jumbotron {
+p {
+	z-index: 100;
+	position: absolute;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	left: 48%;
+	top: 59%;
+}
+
+.btn {
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 30px;
+	font-weight: bold;
+
+}
+
+.page-header {
 	text-align: center;
-	background: #ccffcc;
 	font-size: 90px;
 	font-weight: bold;
-	font-family: sans-serif;
-}
-
-.footer {
-	margin: 20px;
-	font-weight: bold;
+	font-family: "Times New Roman";
 }
 
 label {
+	display: block;
+	text-align: center;
 	font-weight: bold;
 	font-size: 30px;
 }
@@ -24,4 +42,18 @@ select {
 	max-width: 65%;
 	display: block;
 	margin: 0 auto;
+}
+
+footer {
+	padding-top: 20px;
+	margin: 20px;
+	font-weight: bold;
+}
+
+#file {
+	font-size: 20px;
+}
+
+#imgPath {
+	font-size: 20px;
 }

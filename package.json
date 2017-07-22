@@ -4,10 +4,8 @@
   "description": "A place to Find Your Furry Friend",
   "main": "index.js",
   "scripts": {
-
     "start": "node server.js",
     "test": "mocha --recursive"
-
   },
   "repository": {
     "type": "git",
@@ -20,7 +18,6 @@
   },
   "homepage": "https://github.com/brm5050/Kontanta#readme",
   "dependencies": {
-
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
     "express-handlebars": "^3.0.0",
@@ -31,5 +28,4 @@
     "chai": "^4.1.0",
     "mocha": "^3.4.2"
   }
-
 }

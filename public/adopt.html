@@ -26,6 +26,36 @@
   </div>
 
 <!-- your code goes here -->
+<h2>Adorable pets to Adopt!</h2> </br>
+
+
+<ul>
+  {{#each petDetails}}
+
+      
+
+      <div class="col-md-6">
+
+        <div class="form-group">
+        <label for="petname">Pet Name:</label> {{this.petName}} </br>
+        <label for="petdescription">Description:</label> {{this.petDescription}}</br>
+        <label for="petage">Age:</label> {{this.age}} </br>
+        <label for="petgender">Gender:</label> {{this.gender}} </br>
+        <label for="petprice">Price (US $):</label> {{this.price}} </br>
+        <label for="petstock">Available:</label> {{this.stock}} </br>
+        </div>
+ 
+        <a href="/purchase/{{this.id}}" class="button">Adopt Me!</a>
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+     </div>
+
+  {{/each}}
+</ul>
 
 
 
