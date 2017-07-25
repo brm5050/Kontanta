@@ -16,6 +16,7 @@ p {
 
 .carousel-inner img {
   	margin: auto;
+  	max-height: 400px;
 }
 
 .btn {
