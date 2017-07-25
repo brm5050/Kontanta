@@ -7,6 +7,8 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var fileUpload = require('express-fileupload');
+var path = require('path');
+
 var db = require('./models');
 db.sequelize.sync();
 
@@ -34,6 +36,9 @@ app.set("view engine", "handlebars");
 // Import routes and give the server access to them.
 var routes = require("./controllers/petDetailsController.js");
 app.use("/", routes);
+// create the get request
+
+
 
 // Routes
 // =============================================================
