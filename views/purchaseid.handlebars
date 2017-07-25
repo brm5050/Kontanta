@@ -1,0 +1,96 @@
+<h2>Lucky</h2>
+
+
+
+<ul>
+ 
+
+       <div class="col-md-12">
+
+        <div class="form-group">
+        <label for="petname">Pet Name:</label> {{petDetailsInfo.petName}} </br>
+        <label for="petdescription">Description:</label> {{petDetailsInfo.petDescription}}</br>
+        <label for="petage">Age:</label> {{petDetailsInfo.age}} </br>
+        <label for="petgender">Gender:</label> {{petDetailsInfo.gender}} </br>
+        <label for="petprice">Price (US $):</label> {{petDetailsInfo.price}} </br>
+        <label for="petstock">Available:</label> {{petDetailsInfo.stock}} </br>
+        </div>
+
+     </div>
+
+
+
+</ul>
+
+
+
+<div class="col-md-12">
+<h2>Please enter your card information</h2>
+
+
+
+<div class="col-md-6 col-md-offset-3">
+<form id="cms" action="/complete/purchase" method="POST">
+<label for="firstName">First Name:</label>
+	<input type="text" class="form-control" name="firstName">
+	<br/>
+
+	<label for="lastName">Last Name:</label>
+	<input type="text" class="form-control" name="lastName">
+	<br/>
+
+	<label for="ccNumber">Credit Card Number:</label>
+	<input type="text" class="form-control" name="ccNumber">
+	<br/>
+
+	<label for="cvv">CVV Code:</label>
+	<input type="text" class="form-control" name="cvv">
+	<br/>
+
+	<label for="mmyy">Expiration (mmyy):</label>
+	<input type="text" class="form-control" name="mmyy">
+	<br/>
+
+	<label for="address">Billing Address:</label>
+	<input type="text" class="form-control" name="address">
+	<br/>
+
+	<label for="city">City:</label>
+	<input type="text" class="form-control" name="city">
+	<br/>
+
+	<label for="state">State:</label>
+	<input type="text" class="form-control" name="state">
+	<br/>
+
+	<label for="zipcode">Zipcode:</label>
+	<input type="text" class="form-control" name="zipcode">
+	<br/>
+
+	<label for="price">Amount:</label>
+	<input type="text" class="form-control" name="price">
+
+	<input type="hidden" class="form-control" name="petDetailId" value="{{petDetailsInfo.id}}" >
+	
+{{!-- 	<input type="submit" value="Submit"> --}}
+
+{{!-- below is working --}}
+<input  type="submit" value="Submit">
+
+    {{!--  <a href="/thankyou/{{this.id}}" class="button">Submit</a>
+ --}}
+
+{{!-- <div class="col-md-6 col-md-offset-3">
+    <a class="btn btn-default" href="/thankyou/{{this.id}}">Submit</a>
+</div> --}}
+
+
+</form>
+ </div>
+
+</div>
+
+<script> console.log($);</script>
+ 
+
+
