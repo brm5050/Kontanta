@@ -48,9 +48,17 @@ module.exports = function(app) {
 
   app.post("/api/petDetails", function(req, res) {
     db.petDetails.create(req.body).then(function(dbpetdetails) {
-      res.json(dbpetdetails);
+      res.render('thankyoudonation');
     });
   });
+
+  //  POST route for saving a new purchase details
+
+  // app.post("/api/purchaseDetails", function(req, res) {
+  //   db.purchaseDetails.create(req.body).then(function(dbpurchasedetails) {
+  //     res.json(dbpurchasedetails);
+  //   });
+  // });
 
   // DELETE route for deleting pet not available
   app.delete("/api/petDetails/:id", function(req, res) {
