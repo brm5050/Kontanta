@@ -1,4 +1,3 @@
-
 var db = require("../models");
 var express = require("express");
 var router = express.Router();
@@ -7,6 +6,10 @@ var router = express.Router();
 var petDetails = require("../models/petDetails.js");
 var purchaseDetails = require("../models/purchaseDetails.js");
 
+
+router.get("/", function(req, res) {
+  res.render("home");
+});
 
 //this route is good
 //Create all our routes and set up logi within those routes where required.
