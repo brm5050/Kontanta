@@ -1,0 +1,70 @@
+body{
+	background-image: url("/assets/images/background.jpg");
+	align-content: center;
+	text-align: center;
+}
+
+p {
+	z-index: 100;
+	position: absolute;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	left: 48%;
+	top: 59%;
+}
+
+label {
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+select {
+	max-width: 65%;
+	display: block;
+	margin: 0 auto;
+}
+
+footer {
+	margin: 20px;
+	font-weight: bold;
+}
+
+.carousel-inner img {
+  	margin: auto;
+  	max-height: 400px;
+}
+
+.btn {
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 30px;
+	font-weight: bold;
+
+}
+
+.page-header {
+	margin: -10px;
+	text-align: center;
+	font-size: 90px;
+	font-weight: bold;
+	font-family: Lemonada;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+    color: black;
+}
+
+#file {
+	font-size: 20px;
+}
+
+#imgPath {
+	font-size: 20px;
+}
+
