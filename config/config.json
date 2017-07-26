@@ -3,11 +3,7 @@
 {
   "development": {
     "username": "root",
-<<<<<<< HEAD
-    "password": "imdaman",
-=======
-    "password": "Chulbuli369^^",
->>>>>>> 27f884ad16710f8642b0bd84eb581fbe4da60bdc
+    "password": "",
     "database": "kontanta_db",
     "host": "127.0.0.1",
     "dialect": "mysql"

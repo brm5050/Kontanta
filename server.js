@@ -6,7 +6,7 @@
 // =============================================================
 var express = require("express");
 var bodyParser = require("body-parser");
-
+var fileUpload = require('express-fileupload');
 var db = require('./models');
 db.sequelize.sync();
 
@@ -20,6 +20,7 @@ var PORT = process.env.PORT || 8080;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
+app.use(fileUpload());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 // Static directory

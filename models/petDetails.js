@@ -84,6 +84,15 @@ petDetails.associate = function(models) {
     });
 };
 
+petDetails.associate = function(models) {
+    // Associating pets with petDetails
+    // When an pets is deleted, also delete any associated petDetails
+    petDetails.hasOne(models.purchaseDetails, {
+      onDelete: "cascade"
+    });
+};
+
+
 return petDetails;
 
 };
