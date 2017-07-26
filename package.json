@@ -19,13 +19,17 @@
   "homepage": "https://github.com/brm5050/Kontanta#readme",
   "dependencies": {
     "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
     "express": "^4.15.3",
     "express-handlebars": "^3.0.0",
+    "jsonwebtoken": "^7.4.1",
     "mysql2": "^1.3.6",
     "sequelize": "^4.3.2"
   },
   "devDependencies": {
     "chai": "^4.1.0",
-    "mocha": "^3.4.2"
+    "mocha": "^3.4.2",
+    "typescript": "^2.4.2",
+    "typings": "^2.1.1"
   }
 }
