@@ -27,7 +27,9 @@
       <input type="text" class="form-control" name="stock">
 
       <label for="url">Upload image of your pet:</label>
-      <input type="text" class="form-control" name="url">
+      <form method="post" enctype="multipart/form-data" action="/upload">
+        <input type="file" name="file">
+      </form>
 
       <div class="form-group">
         <label for="vaccinated">When last time pet safely vaccinated:</label>
