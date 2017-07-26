@@ -11,6 +11,10 @@ router.get("/", function(req, res) {
   res.render("home");
 });
 
+router.get("/sale", function(req, res) {
+  res.render("donate");
+});
+
 //this route is good
 //Create all our routes and set up logi within those routes where required.
 router.get("/purchase" , function(req, res) {
