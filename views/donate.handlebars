@@ -1,57 +1,57 @@
 <div class="col-md-6 col-md-offset-3">
-    <form id="cms" action="/api/petdetails" method="post">
+  <form id="cms" action="/api/petdetails" method="post">
+    <div class="form-group">
+
+      <label for="petName">Pet Name:</label>
+      <input type="text" class="form-control" name="petName">
+
+      <br>
+
+      <label for="petDescription">Pet Description:</label>
+      <textarea class="form-control" rows="6" name="petDescription"></textarea>
+      <label for="age">Age:</label>
+      <input type="text" class="form-control" name="age">
+
       <div class="form-group">
-
-        <label for="petName">Pet Name:</label>
-        <input type="text" class="form-control" name="petName">
-
-        <br>
-
-        <label for="petDescription">Pet Description:</label>
-        <textarea class="form-control" rows="6" name="petDescription"></textarea>
-        <label for="age">Age:</label>
-        <input type="text" class="form-control" name="age">
-
-        <div class="form-group">
-          <label for="gender">Gender:</label>
-          <select class="form-control" name="gender">
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-          <option value="unknown">Unknown</option>
-          </select>
-        </div>
-
-        <label for="price">Price (US$):</label>
-        <input type="text" class="form-control" name="price">
-        <label for="stock">Stock:</label>
-        <input type="text" class="form-control" name="stock">
-
-        <label for="url">Upload image of your pet:</label>
-        <input type="text" class="form-control" name="url">
-
-        <div class="form-group">
-          <label for="vaccinated">When last time pet safely vaccinated:</label>
-          <select class="form-control" name="vaccinated">
-          <option value="2017">2017</option>
-          <option value="2016">2016</option>
-          <option value="unknown">Unknown</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="category">Select Pet Category:</label>
-          <select class="form-control" name="petId">
-            <option value="1">Cat</option>
-            <option value="2">Dog</option>
-            <option value="3">Fish</option>
-            <option value="4">Reptile</option>
-            </select>
-        </div>
-
-        <br>
-
-        <button type="submit" class="btn btn-success submit">Submit</button>
-
+        <label for="gender">Gender:</label>
+        <select class="form-control" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="unknown">Unknown</option>
+        </select>
       </div>
-    </form>
+
+      <label for="price">Price (US$):</label>
+      <input type="text" class="form-control" name="price">
+      <label for="stock">Stock:</label>
+      <input type="text" class="form-control" name="stock">
+
+      <label for="url">Upload image of your pet:</label>
+      <input type="text" class="form-control" name="url">
+
+      <div class="form-group">
+        <label for="vaccinated">When last time pet safely vaccinated:</label>
+        <select class="form-control" name="vaccinated">
+        <option value="2017">2017</option>
+        <option value="2016">2016</option>
+        <option value="unknown">Unknown</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="category">Select Pet Category:</label>
+        <select class="form-control" name="petId">
+          <option value="1">Cat</option>
+          <option value="2">Dog</option>
+          <option value="3">Fish</option>
+          <option value="4">Reptile</option>
+          </select>
+      </div>
+
+      <br>
+
+      <button type="submit" class="btn btn-success submit">Submit</button>
+
+    </div>
+  </form>
 </div>

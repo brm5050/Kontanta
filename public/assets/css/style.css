@@ -32,6 +32,19 @@ footer {
 	font-weight: bold;
 }
 
+.page-header {
+	margin: -10px;
+	text-align: center;
+	font-size: 90px;
+	font-weight: bold;
+	font-family: Lemonada;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+    color: black;
+}
+
 .carousel-inner img {
   	margin: auto;
   	max-height: 400px;
@@ -45,19 +58,6 @@ footer {
 	font-size: 30px;
 	font-weight: bold;
 
-}
-
-.page-header {
-	margin: -10px;
-	text-align: center;
-	font-size: 90px;
-	font-weight: bold;
-	font-family: Lemonada;
-}
-
-.carousel-control.left, .carousel-control.right {
-    background-image: none;
-    color: black;
 }
 
 #file {
