@@ -33,13 +33,8 @@ app.set("view engine", "handlebars");
 
 // Import routes and give the server access to them.
 var routes = require("./controllers/petDetailsController.js");
-app.use("/", routes);
+app.use("/", routes); // To display App Home page
 
-// Routes
-// =============================================================
-require("./routes/html-routes.js")(app);
-require("./routes/petdetails-api-routes.js")(app);
-require("./routes/pets-api-routes.js")(app);
 
 // Starting our Express app
 // =============================================================
