@@ -60,7 +60,7 @@ stock : {
       }
 	},
 
-  url: {
+  img: {
     type: Sequelize.STRING,
     allowNull: true
   },

@@ -25,12 +25,9 @@ lastName : {
 	
 
 ccNumber : {
-  type : Sequelize.INTEGER,
-  allowNull: false,
+  type : Sequelize.TEXT,
+  allowNull: false
 
-  validate: {
-        len: [1]
-      }
   },
 
 cvv : {
