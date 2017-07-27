@@ -31,7 +31,6 @@ age : {
         len: [1, 2]
       }
   },
-
   gender : {
   type : Sequelize.STRING,
   allowNull: false,
@@ -59,16 +58,14 @@ stock : {
         len: [1]
       }
 	},
-
-  url: {
-    type: Sequelize.STRING,
+    img: {
+    type: Sequelize.BLOB,
     allowNull: true
   },
-
-  vaccinated: {
+    vaccinated: {
     type: Sequelize.STRING,
     allowNull: false
-  }
+  },
 
 
 });
