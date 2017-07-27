@@ -51,9 +51,23 @@ router.get("/purchase/:id", function(req, res) {
   });
 
 
-  // router.post("/complete/purchase", function(req, res) {
+  router.post("/complete/purchase", function(req, res) {
+    console.log(req.body);
+    db.purchaseDetails.create(req.body).then(function(dbpurchasedetails) {
+      //to display purchasedetails
+      //res.json(dbpurchasedetails);
+      // console.log(dbpurchasedetails);
+      //var newPurchaseid = dbpurchasedetails.id;
+      res.redirect("/thankyou/"+ dbpurchasedetails.id);
+          });
+
+  });
+
+
+  //   router.post("/complete/purchase", function(req, res) {
   //   console.log(req.body);
   //   db.purchaseDetails.create(req.body).then(function(dbpurchasedetails) {
+  //     //to display purchasedetails
   //     res.json(dbpurchasedetails);
   //     // console.log(dbpurchasedetails);
   //     var newPurchaseid = dbpurchasedetails.id;
@@ -61,32 +75,6 @@ router.get("/purchase/:id", function(req, res) {
   //         });
 
   // });
-
-
-//------------------------------------------------
-
-
-  //need to check for stock update-------Need to work on it---------------------
-
-router.post("/complete/purchase", function(req, res) {
-    console.log(req.body);
-    db.purchaseDetails.findOne({where: {id: req.body.id}}).then(function(dbpurchasedetails) {
-    db.purchaseDetails.update({stock : dbpurchasedetails.stock-1}, {where : {id:req.body.id}}).then(function(dbpurchasedetails) {
-      var newPurchaseid = dbpurchasedetails.id;
-      console.log("testtesttest");
-      res.redirect("/thankyou/"+ newPurchaseid);
-    });
-  
-          });
-
-  });
-
-//------------------------------------------------
-
-
-// router.get("/complete/purchase", function(req, res){
-//   res.send("Hello thanks for ordering...");
-// })
 
 
 
@@ -97,7 +85,7 @@ router.get("/thankyou/:id", function(req, res){
       }
       }).then(function(dbpets) {
      var hbsObjectIndividual = {
-      petDetailsInfo: dbpets.dataValues
+      petDetailsInfo: dbpets
       };
      res.render("thankyouadoption", hbsObjectIndividual);
     });
