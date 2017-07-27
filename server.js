@@ -10,7 +10,6 @@ var fileUpload = require('express-fileupload');
 var db = require('./models');
 db.sequelize.sync();
 
-
 // Sets up the Express App
 // =============================================================
 var app = express();
