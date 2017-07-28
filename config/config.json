@@ -16,7 +16,7 @@
   "production": {
     "username": "tf3p67fdiur7xith",
     "password": "m84q1webi38w1yrr",
-    "database": "database_production",
+    "database": "kontanta_db",
     "host": "a07yd3a6okcidwap.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   }
